@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <style>
+        .navbar {
+            display: flex;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex :1;
+            flex-direction: row;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 14px 20px;
+        }
+        .navbar .menu {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            list-style-type: none;
+            white-space: nowrap;
+        }
+    </style>
+    <title>Basic Horizontal Navigation Bar</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">BrandName</div>
+        <div class="menu">
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+</body>
+
+</html>

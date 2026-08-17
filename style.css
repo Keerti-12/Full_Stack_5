@@ -1,0 +1,21 @@
+body { 
+    background: white; 
+    display: flex; 
+    min-height: 100vh; 
+    font-family: sans-serif; 
+}
+.login-card { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px black; 
+    width: 100%; 
+    max-width: 400px; 
+}
+.input-group input { 
+    width: 100%; 
+    padding: 12px; 
+    margin-top: 5px; 
+    border: 1px solid black; 
+    border-radius: 8px; 
+}
