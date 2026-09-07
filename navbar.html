@@ -10,21 +10,26 @@
         .navbar {
             display: flex;
             background-color: #333;
+            flex-direction: row;
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(230, 12, 12, 0.4);
             flex :1;
             flex-direction: row;
         }
         .navbar .logo {
             color: white;
-            font-size: 24px;
+            margin-left: 20px;
+            font-size: 30px;
             font-weight: bold;
             padding: 14px 20px;
         }
         .navbar .menu {
             display: flex;
-            flex: 1;
-            justify-content: flex-end;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             list-style-type: none;
             white-space: nowrap;
         }
@@ -38,9 +43,11 @@
         <div class="logo">BrandName</div>
         <div class="menu">
         <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <button>Home</button>
+        <button>Services</button>
+        <button>Contact</button>
+        <button>About</button>
+        <button>Login</button>
         </ul>
         </div>
     </div>
