@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color : #6096de;
+            --secondary-color : plum;
+            --font-size : 26px;
+        }
+
+        div{
+            --primary-color : #6724bf;
+            --secondary-color : rgb(237, 93, 213);
+        }
+        .container{
+            outline: 1px solid var(--main-color);
+            background : linear-gradient(var(--main-color),var(--secondary-color),var(--main-color));
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            border-radius : 10px;
+        }
+
+        .container > div{
+            font-size: var(--font-size);
+            align-content : center;
+        }
+
+        .box1{
+            grid-column : 2/4;
+            grid-row : 2/4;
+            background : radial-gradient(skyblue,white,skyblue);
+        }
+
+        .box2{
+            grid-row : 2/3;
+            grid-column : 2/3;
+            background : linear-gradient(green,white,lightgreen);
+            border-radius : 50%;
+            z-index : 2;
+        }
+        .box3{
+            grid-column : 3/4;
+            grid-row : 3/4;
+            background : linear-gradient(plum,white,skyblue);
+        }
+
+        .box6{
+            grid-column : 3/4;
+            grid-row : 3/4;
+            background : linear-gradient(green,white,lightgreen);
+            border-radius : 50%;
+            box-shadow : 0 0 10px rgba(0,0,0,0.5);
+        }
+        .box4{
+            grid-column : 2/3;
+            grid-row : 2/3;
+            background : linear-gradient(plum,white,skyblue);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+    </div>
+</body>
+</html>
